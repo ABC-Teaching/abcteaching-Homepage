@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>ABC Teaching</title>
+<link rel="icon" type="image/x-icon" href="./html/assets/img/favicon.png">
+
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav {
+            margin: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #3c3f3c;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .game {
+            margin: 15px;
+            cursor: pointer;
+        }
+        .game img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .game img:hover {
+            transform: scale(1.05);
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+        }
+        .nav-buttons {
+            margin-left: auto;
+        }
+        .nav-buttons a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav-buttons a:hover {
+            background-color: #575757;
+        }
+</style>
+
+<body>
+
+<nav style="position: sticky; top: 0; background-color: white; z-index: 1000;">
+    <div class="navbar">
+        <img src="./html/assets/img/navbar.png" alt="Website Logo">
+        <h1>ABC Teaching</h1>
+        <div class="nav-buttons">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="game-container">
+    <div class="game" onclick="location.href='game1.html'">
+        <img src="game1.jpg" alt="Game 1">
+        <p>Game 1</p>
+    </div>
+    <div class="game" onclick="location.href='game2.html'">
+        <img src="game2.jpg" alt="Game 2">
+        <p>Game 2</p>
+    </div>
+    <div class="game" onclick="location.href='game3.html'">
+        <img src="game3.jpg" alt="Game 3">
+        <p>Game 3</p>
+    </div>
+    <div class="game" onclick="location.href='game4.html'">
+        <img src="game4.jpg" alt="Game 4">
+        <p>Game 4</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 ABC Teaching. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
